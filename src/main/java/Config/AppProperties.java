@@ -45,6 +45,9 @@ public class AppProperties {
         activeBrowser = getActiveElement("activeBrowser");
         allBrowserModels = getAllBrowserModels();
         filteredBrowserModels = getFilteredBrowser(allBrowserModels);
+        if (filteredBrowserModels.isEmpty()) {
+            throw new IllegalStateException();
+        }
         logger.info("Setting browser properties...");
         for (Map.Entry<String, BrowserModel> entry : filteredBrowserModels.entrySet()) {
             for (Map.Entry<String, Object> properties : entry.getValue().getBrowserProperties().entrySet()) {
