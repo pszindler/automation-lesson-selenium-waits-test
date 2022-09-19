@@ -1,0 +1,25 @@
+active:
+  activeBrowser: chrome
+  activeEnvironment: lab
+
+browser:
+  chrome:
+    headlessMode: true
+    fullscreenMode: true
+    screenshot: true
+    webElementTimeout: 15
+  firefox:
+    headlessMode: true
+    fullscreenMode: false
+    screenshot: false
+    webElementTimeout: 10
+
+environment:
+  lab:
+    envName: lab_01
+    appUrl: https://www.selenium.dev
+    title: Selenium
+  prod:
+    envName: prod
+    appUrl: https://logback.qos.ch/
+    title: Logback Home
