@@ -18,7 +18,8 @@
         <jupiter.boni.garcia.version>4.3.0</jupiter.boni.garcia.version>
         <jupiter.version>5.8.2</jupiter.version>
         <assertj.core.version>3.22.0</assertj.core.version>
-        <jackson.version>2.13.3</jackson.version>
+        <jackson.version>2.13.4</jackson.version>
+        <faker.version>1.0.2</faker.version>
     </properties>
 
     <dependencies>
@@ -102,8 +103,12 @@
             <artifactId>jackson-dataformat-yaml</artifactId>
             <version>${jackson.version}</version>
         </dependency>
-
-
+        <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>${faker.version}</version>
+        </dependency>
     </dependencies>
 
     <build>

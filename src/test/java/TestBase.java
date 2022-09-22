@@ -1,17 +1,13 @@
 import Config.AppProperties;
 import Driver.DriverFactory;
 
-import Driver.DriverManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 
-
 public class TestBase {
      protected WebDriver driver;
-     protected DriverManager driverManager;
-
 
     @BeforeAll
      static void beforeAll() {
@@ -20,12 +16,11 @@ public class TestBase {
 
     @BeforeEach
     void setup() {
-        driverManager = DriverFactory.getManager();
-        driver = driverManager.getDriver();
+        driver = new DriverFactory().createInstance(System.getProperty("activeBrowser"));
     }
 
     @AfterEach
     void teardown() {
-        driverManager.quitDriver();
+        driver.quit();
     }
 }

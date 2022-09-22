@@ -1,34 +1,31 @@
 package Driver;
 
-public class DriverFactory {
-    public static DriverManager getManager() {
-        DriverManager driverManager = null;
+import Driver.Manager.*;
+import Exceptions.BrowserNotSupportedException;
+import org.openqa.selenium.WebDriver;
 
-        switch (getBrowserType()) {
+public class DriverFactory {
+    public WebDriver createInstance (String browserFromConfig) {
+        WebDriver driver;
+        Browser browser = Browser.valueOf(browserFromConfig.toUpperCase());
+
+        switch (browser) {
             case CHROME:
-                driverManager = new ChromeDriverManager();
+                driver = new ChromeDriverManager().createDriver();
                 break;
             case FIREFOX:
-                driverManager = new FireFoxDriverManager();
+                driver = new FirefoxDriverManager().createDriver();
                 break;
             case IE:
+                driver = new IEDriverManager().createDriver();
                 break;
             case SAFARI:
+                driver = new SafariDriverManager().createDriver();
+            case EDGE:
+                driver = new EdgeDriverManager().createDriver();
             default:
-//                driverManager = new EdgeDriverManager();
-                break;
+              throw new BrowserNotSupportedException(browser);
         }
-        return driverManager;
-    }
-
-    private static Browser getBrowserType() {
-        String browserType = System.getProperty("browserName");
-        return switch (browserType) {
-            case "chrome" -> Browser.CHROME;
-            case "firefox" -> Browser.FIREFOX;
-            case "ie" -> Browser.IE;
-            case "safari" -> Browser.SAFARI;
-            default -> Browser.EDGE;
-        };
+        return driver;
     }
 }
