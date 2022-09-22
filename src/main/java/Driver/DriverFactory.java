@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 public class DriverFactory {
     public WebDriver createInstance (String browserFromConfig) {
         WebDriver driver;
-        Browser browser = Browser.valueOf(browserFromConfig.toUpperCase());
+        BrowserTypes browser = BrowserTypes.valueOf(browserFromConfig.toUpperCase());
 
         switch (browser) {
             case CHROME:

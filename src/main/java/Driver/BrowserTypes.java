@@ -1,5 +1,5 @@
 package Driver;
 
-public enum Browser {
+public enum BrowserTypes {
     CHROME, FIREFOX, IE, SAFARI, EDGE
 }

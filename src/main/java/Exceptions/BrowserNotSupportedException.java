@@ -1,9 +1,9 @@
 package Exceptions;
 
-import Driver.Browser;
+import Driver.BrowserTypes;
 
 public class BrowserNotSupportedException extends IllegalStateException {
-    public BrowserNotSupportedException(Browser browser) {
+    public BrowserNotSupportedException(BrowserTypes browser) {
         super(String.format("Browser not supported: %s", browser));
     }
 }

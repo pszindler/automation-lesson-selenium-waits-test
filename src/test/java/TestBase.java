@@ -16,7 +16,8 @@ public class TestBase {
 
     @BeforeEach
     void setup() {
-        driver = new DriverFactory().createInstance(System.getProperty("activeBrowser"));
+        String browser = System.getProperty("browserName");
+        driver = new DriverFactory().createInstance(browser);
     }
 
     @AfterEach

@@ -4,31 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22a64a02-7fa6-4d9f-9e3c-f8573dff23ec" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Driver/Factory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Driver/Manager/ChromeDriverManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Driver/Manager/EdgeDriverManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Driver/Manager/FirefoxDriverManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Driver/Manager/IEDriverManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Driver/Manager/SafariDriverManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Exceptions/BrowserNotSupportedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Models/UserFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage/ProductsGridPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage/TopHomePageMenuPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/SearchPage/SearchResultPage.java" afterDir="false" />
+    <list default="true" id="22a64a02-7fa6-4d9f-9e3c-f8573dff23ec" name="Changes" comment="uproszczenie fabryki i managera po uwagach Darka">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Driver/Browser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver/Browser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Driver/ChromeDriverManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Driver/Browser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver/BrowserTypes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Driver/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Driver/DriverManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Driver/FireFoxDriverManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exceptions/BrowserNotSupportedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Exceptions/BrowserNotSupportedException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663624040263</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="uproszczenie fabryki i managera po uwagach Darka">
+      <created>1663839006229</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663839006229</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,6 +140,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="uproszczenie fabryki i managera po uwagach Darka" />
+    <option name="LAST_COMMIT_MESSAGE" value="uproszczenie fabryki i managera po uwagach Darka" />
   </component>
 </project>
