@@ -6,10 +6,9 @@ import org.openqa.selenium.WebDriver;
 
 public class DriverFactory {
     public WebDriver createInstance (String browserFromConfig) {
-        WebDriver driver;
-        BrowserTypes browser = BrowserTypes.valueOf(browserFromConfig.toUpperCase());
 
-        driver = switch (browser) {
+        BrowserTypes browser = BrowserTypes.valueOf(browserFromConfig.toUpperCase());
+        return switch (browser) {
             case CHROME -> new ChromeDriverManager().createDriver();
             case FIREFOX -> new FirefoxDriverManager().createDriver();
             case IE -> new IEDriverManager().createDriver();
@@ -17,6 +16,5 @@ public class DriverFactory {
             case EDGE -> new EdgeDriverManager().createDriver();
             default -> throw new BrowserNotSupportedException(browser);
         };
-        return driver;
     }
 }

@@ -1,11 +1,20 @@
-activeEnvironment: lab
+active:
+  activeBrowser: chrome
+  activeEnvironment: lab
 
 browser:
-  browserInUse: chrome
-  headlessMode: true
-  fullscreenMode: true
-  takeScreenshot: true
-  webElementTimeout: 15
+  chrome:
+    browserName: chrome
+    headlessMode: true
+    fullscreenMode: true
+    takeScreenshot: true
+    webElementTimeout: 15
+  firefox:
+    browserName: firefox
+    headlessMode: false
+    fullscreenMode: false
+    takeScreenshot: false
+    webElementTimeout: 10
 
 environment:
   lab:
