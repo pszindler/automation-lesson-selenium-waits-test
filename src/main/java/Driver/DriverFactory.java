@@ -9,25 +9,14 @@ public class DriverFactory {
         WebDriver driver;
         BrowserTypes browser = BrowserTypes.valueOf(browserFromConfig.toUpperCase());
 
-        switch (browser) {
-            case CHROME:
-                driver = new ChromeDriverManager().createDriver();
-                break;
-            case FIREFOX:
-                driver = new FirefoxDriverManager().createDriver();
-                break;
-            case IE:
-                driver = new IEDriverManager().createDriver();
-                break;
-            case SAFARI:
-                driver = new SafariDriverManager().createDriver();
-                break;
-            case EDGE:
-                driver = new EdgeDriverManager().createDriver();
-                break;
-            default:
-              throw new BrowserNotSupportedException(browser);
-        }
+        driver = switch (browser) {
+            case CHROME -> new ChromeDriverManager().createDriver();
+            case FIREFOX -> new FirefoxDriverManager().createDriver();
+            case IE -> new IEDriverManager().createDriver();
+            case SAFARI -> new SafariDriverManager().createDriver();
+            case EDGE -> new EdgeDriverManager().createDriver();
+            default -> throw new BrowserNotSupportedException(browser);
+        };
         return driver;
     }
 }
