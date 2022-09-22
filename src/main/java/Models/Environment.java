@@ -1,23 +1,18 @@
 package Models;
 
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 
+@Data
+@NoArgsConstructor
 public class Environment {
+    EnvironmentModel lab;
+    EnvironmentModel prod;
 
-    Map<String, EnvironmentModel> properties = new LinkedHashMap<>();
-
-    @JsonAnySetter
-    void setEnvironmentProperties(String key, EnvironmentModel model) {
-        properties.put(key, model);
+    public List<EnvironmentModel> getAllEnv() {
+        return new ArrayList<>(List.of(getLab(), getProd()));
     }
-
-    @JsonAnyGetter
-    public Map<String, EnvironmentModel> getEnvironmentProperties() {
-        return properties;
-    }
-
 }

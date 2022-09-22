@@ -1,25 +1,16 @@
 package Config;
 
-import Models.Active;
+import Models.ActiveEnvironment;
 import Models.Browser;
 import Models.Environment;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
+@Getter
+@NoArgsConstructor
 public class Configuration {
-    public Active active;
+    public ActiveEnvironment activeEnvironment;
     public Browser browser;
     public Environment environment;
 
-    public Browser getBrowser() {
-        return browser;
-    }
-
-    public Environment getEnv() {
-        return environment;
-    }
-
-    public Active getActive() {
-        return active;
-    }
-
-    public Configuration() {}
 }

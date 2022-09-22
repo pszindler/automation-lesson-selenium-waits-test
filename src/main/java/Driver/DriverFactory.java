@@ -5,7 +5,8 @@ import Exceptions.BrowserNotSupportedException;
 import org.openqa.selenium.WebDriver;
 
 public class DriverFactory {
-    public WebDriver createInstance (String browserFromConfig) {
+    public WebDriver createInstance () throws BrowserNotSupportedException {
+        String browserFromConfig = System.getProperty("browserInUse");
         BrowserTypes browser = BrowserTypes.valueOf(browserFromConfig.toUpperCase());
         return switch (browser) {
             case CHROME -> new ChromeDriverManager().createDriver();
@@ -13,7 +14,6 @@ public class DriverFactory {
             case IE -> new IEDriverManager().createDriver();
             case SAFARI -> new SafariDriverManager().createDriver();
             case EDGE -> new EdgeDriverManager().createDriver();
-            default -> throw new BrowserNotSupportedException(browser);
         };
     }
 }

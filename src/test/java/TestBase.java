@@ -1,4 +1,4 @@
-import Config.AppProperties;
+import Config.AppPropertiesSingleton;
 import Driver.DriverFactory;
 
 import org.junit.jupiter.api.AfterEach;
@@ -11,13 +11,12 @@ public class TestBase {
 
     @BeforeAll
      static void beforeAll() {
-        AppProperties properties = new AppProperties();
+        AppPropertiesSingleton.getInstance();
      }
 
     @BeforeEach
     void setup() {
-        String browser = System.getProperty("browserName");
-        driver = new DriverFactory().createInstance(browser);
+        driver = new DriverFactory().createInstance();
     }
 
     @AfterEach

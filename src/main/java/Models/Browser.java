@@ -3,19 +3,20 @@ package Models;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 
-import java.util.LinkedHashMap;
+import java.util.HashMap;
 import java.util.Map;
 
 public class Browser {
-    Map<String, BrowserModel> properties = new LinkedHashMap<>();
 
-    @JsonAnySetter
-    void setBrowserProperties(String key, BrowserModel model) {
-        properties.put(key, model);
-    }
+    Map<String, Object> properties = new HashMap<>();
 
     @JsonAnyGetter
-    public Map<String, BrowserModel> getBrowserProperties() {
+    public Map<String, Object> getProperties() {
         return properties;
+    }
+
+    @JsonAnySetter
+    public void setProperties(String key, Object value) {
+        properties.put(key, value);
     }
 }

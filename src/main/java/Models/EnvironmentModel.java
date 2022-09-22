@@ -2,12 +2,17 @@ package Models;
 
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
+import lombok.Getter;
 
-import java.util.LinkedHashMap;
+import java.util.HashMap;
 import java.util.Map;
 
+
 public class EnvironmentModel {
-    Map<String, Object> properties = new LinkedHashMap<>();
+    @Getter
+    String envName;
+
+    Map<String, Object> properties = new HashMap<>();
 
     @JsonAnySetter
     void setEnvironmentProperties(String key, Object value) {
@@ -19,10 +24,4 @@ public class EnvironmentModel {
         return properties;
     }
 
-    @Override
-    public String toString() {
-        return "EnvironmentModel{" +
-                "properties=" + properties +
-                '}';
-    }
 }
