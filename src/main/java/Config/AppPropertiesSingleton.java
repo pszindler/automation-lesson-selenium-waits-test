@@ -1,15 +1,12 @@
 package Config;
 
-import Models.EnvironmentModel;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import Models.YamlClasses.EnvironmentModel;
 
 import java.util.List;
 import java.util.Map;
 
 public final class AppPropertiesSingleton {
     private static AppPropertiesSingleton INSTANCE;
-    private static final Logger logger = LoggerFactory.getLogger(AppPropertiesSingleton.class);
     YamlReader yamlReader = new YamlReader();
 
     private AppPropertiesSingleton() {
@@ -20,9 +17,9 @@ public final class AppPropertiesSingleton {
     private void setEnvironmentProperties() {
         List<EnvironmentModel> envs = yamlReader.getConfig().environment.getAllEnv();
 
-        for (EnvironmentModel env: envs) {
+        for (EnvironmentModel env : envs) {
             if (env.getEnvName().equals(getActiveEnv())) {
-                for (Map.Entry<String, Object> entry: env.getEnvironmentProperties().entrySet()) {
+                for (Map.Entry<String, Object> entry : env.getEnvironmentProperties().entrySet()) {
                     System.setProperty(entry.getKey(), entry.getValue().toString());
                 }
             }
@@ -31,7 +28,7 @@ public final class AppPropertiesSingleton {
     }
 
     private void setBrowserProperties() {
-        for (Map.Entry<String, Object> entry: yamlReader.getConfig().getBrowser().getProperties().entrySet()) {
+        for (Map.Entry<String, Object> entry : yamlReader.getConfig().getBrowser().getProperties().entrySet()) {
             System.setProperty(entry.getKey(), entry.getValue().toString());
         }
     }

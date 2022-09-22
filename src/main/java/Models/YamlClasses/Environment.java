@@ -1,4 +1,4 @@
-package Models;
+package Models.YamlClasses;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

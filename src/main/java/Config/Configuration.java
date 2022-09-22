@@ -1,8 +1,8 @@
 package Config;
 
-import Models.ActiveEnvironment;
-import Models.Browser;
-import Models.Environment;
+import Models.YamlClasses.ActiveEnvironment;
+import Models.YamlClasses.Browser;
+import Models.YamlClasses.Environment;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
