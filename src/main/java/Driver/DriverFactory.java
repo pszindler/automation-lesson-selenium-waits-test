@@ -21,8 +21,10 @@ public class DriverFactory {
                 break;
             case SAFARI:
                 driver = new SafariDriverManager().createDriver();
+                break;
             case EDGE:
                 driver = new EdgeDriverManager().createDriver();
+                break;
             default:
               throw new BrowserNotSupportedException(browser);
         }
