@@ -1,6 +1,8 @@
 package Pages.HomePage;
 
-import Pages.BasePage;
+import Pages.BasePage.BasePage;
+import lombok.Getter;
+import lombok.Setter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,25 +15,19 @@ public class ProductsGridPage extends BasePage {
         super(driver);
     }
 
-    @FindBy(xpath = "//section[@id='content']/section/div/div")
+    @FindBy(css = ".product")
     private List<WebElement> productList;
-    List<Product> products;
+    @Getter
+    public List<Product> products;
 
-    public List<Product> getListOfProducts() {
+    public ProductsGridPage setListOfProducts() {
         List<Product> listOfProd = new ArrayList<>();
 
         for (WebElement product: productList) {
             listOfProd.add(new Product(product));
         }
-        return listOfProd;
-    }
-
-    public List<Product> getProducts() {
-        return products;
-    }
-
-    public void setProducts() {
-        this.products = getListOfProducts();
+        this.products = listOfProd;
+        return this;
     }
 
     public Product getRandomProd() {

@@ -1,4 +1,4 @@
-activeEnvironment: lab
+activeEnvironment: prod
 
 browser:
     browserInUse: chrome

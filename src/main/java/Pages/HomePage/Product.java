@@ -11,11 +11,11 @@ public class Product {
         PageFactory.initElements(new DefaultElementLocatorFactory(product), this);
     }
 
-    @FindBy(xpath = "article/div/div/h3")
+    @FindBy(css = ".product-title")
     private WebElement articleName;
 //    @FindBy(xpath = "article/div/div/div/span[@class='regular-price']")
 //    private WebElement regularPrice;
-    @FindBy(xpath = "article/div/div/div/span[@class='price']")
+    @FindBy(css = ".price")
     private WebElement currentPrice;
 //    @FindBy(xpath = "article/div/div/div/span[@class='discount-percentage discount-product']")
 //    private WebElement discountPercentage;

@@ -1,6 +1,6 @@
 package Pages.SearchPage;
 
-import Pages.BasePage;
+import Pages.BasePage.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

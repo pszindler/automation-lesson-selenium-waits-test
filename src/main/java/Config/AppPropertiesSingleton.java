@@ -16,14 +16,12 @@ public final class AppPropertiesSingleton {
 
     private void setEnvironmentProperties() {
         List<EnvironmentModel> envs = yamlReader.getConfig().environment.getAllEnv();
-
         for (EnvironmentModel env : envs) {
             if (env.getEnvName().equals(getActiveEnv())) {
                 for (Map.Entry<String, Object> entry : env.getEnvironmentProperties().entrySet()) {
                     System.setProperty(entry.getKey(), entry.getValue().toString());
                 }
             }
-            break;
         }
     }
 

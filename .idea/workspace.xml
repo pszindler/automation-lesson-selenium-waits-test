@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22a64a02-7fa6-4d9f-9e3c-f8573dff23ec" name="Changes" comment="fixed problem with custom exception" />
+    <list default="true" id="22a64a02-7fa6-4d9f-9e3c-f8573dff23ec" name="Changes" comment="fixed problem with custom exception">
+      <change afterPath="$PROJECT_DIR$/src/test/java/SearchTests/SearchPageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestBase/Pages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Config/AppPropertiesSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Config/AppPropertiesSingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/BasePage/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage/ProductsGridPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage/ProductsGridPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage/TopHomePageMenuPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage/TopHomePageMenuPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SearchPage/SearchResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/SearchPage/SearchResultPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestCase.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,8 +64,11 @@
     <key name="CreateBuilderDialog.RecentsKey">
       <recent name="Models" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestCase.searchTestPositiveCase">
+  <component name="RunManager" selected="JUnit.SearchPageTest.searchForItemFromHomePageTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="automation-lesson-yaml-properties" />
@@ -60,20 +76,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCase.searchTestPositiveCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchPageTest.checkIfDropDownAppearsWithAutoSuggestion (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automation-lesson-yaml-properties" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestCase" />
-      <option name="METHOD_NAME" value="searchTestPositiveCase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SearchTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SearchTests" />
+      <option name="MAIN_CLASS_NAME" value="SearchTests.SearchPageTest" />
+      <option name="METHOD_NAME" value="checkIfDropDownAppearsWithAutoSuggestion" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCase.testBrowser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchPageTest.checkIfDropDownAppearsWithAutoSuggestion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automation-lesson-yaml-properties" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestCase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SearchTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SearchTests" />
+      <option name="MAIN_CLASS_NAME" value="SearchTests.SearchPageTest" />
+      <option name="METHOD_NAME" value="checkIfDropDownAppearsWithAutoSuggestion(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchPageTest.searchForItemFromHomePageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automation-lesson-yaml-properties" />
+      <option name="PACKAGE_NAME" value="SearchTests" />
+      <option name="MAIN_CLASS_NAME" value="SearchTests.SearchPageTest" />
+      <option name="METHOD_NAME" value="searchForItemFromHomePageTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchPageTest.testBrowser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automation-lesson-yaml-properties" />
+      <option name="PACKAGE_NAME" value="SearchTests" />
+      <option name="MAIN_CLASS_NAME" value="SearchTests.SearchPageTest" />
       <option name="METHOD_NAME" value="testBrowser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -82,8 +130,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestCase.searchTestPositiveCase" />
-        <item itemvalue="JUnit.TestCase.testBrowser" />
+        <item itemvalue="JUnit.SearchPageTest.searchForItemFromHomePageTest" />
+        <item itemvalue="JUnit.SearchPageTest.checkIfDropDownAppearsWithAutoSuggestion (1)" />
+        <item itemvalue="JUnit.SearchPageTest.checkIfDropDownAppearsWithAutoSuggestion" />
+        <item itemvalue="JUnit.SearchPageTest.testBrowser" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -209,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663924104782</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fixed problem with custom exception">
+      <created>1663924974645</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1663924974645</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

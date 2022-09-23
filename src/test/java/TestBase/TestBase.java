@@ -1,3 +1,5 @@
+package TestBase;
+
 import Config.AppPropertiesSingleton;
 import Driver.DriverFactory;
 
@@ -10,7 +12,8 @@ public class TestBase {
      protected WebDriver driver;
 
     @BeforeAll
-     static void beforeAll() {
+
+    static void beforeAll() {
         AppPropertiesSingleton.getInstance();
      }
 
