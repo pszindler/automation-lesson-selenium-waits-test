@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22a64a02-7fa6-4d9f-9e3c-f8573dff23ec" name="Changes" comment="fixes after Darek tips">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="22a64a02-7fa6-4d9f-9e3c-f8573dff23ec" name="Changes" comment="fixed problem with custom exception">
       <change beforePath="$PROJECT_DIR$/src/main/java/Driver/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exceptions/BrowserNotSupportedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Exceptions/BrowserNotSupportedException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +191,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663921454766</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fixed problem with custom exception">
+      <created>1663923755853</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1663923755853</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fixed problem with custom exception">
+      <created>1663923854269</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1663923854269</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -213,6 +225,7 @@
     <MESSAGE value="break was missing in DriverFactory.java" />
     <MESSAGE value="new type of switch" />
     <MESSAGE value="fixes after Darek tips" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes after Darek tips" />
+    <MESSAGE value="fixed problem with custom exception" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed problem with custom exception" />
   </component>
 </project>

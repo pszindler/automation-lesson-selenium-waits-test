@@ -1,7 +1,7 @@
 activeEnvironment: lab
 
 browser:
-    browserInUse: chromium
+    browserInUse: chrome
     headlessMode: true
     fullscreenMode: true
     takeScreenshot: true

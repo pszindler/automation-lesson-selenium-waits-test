@@ -15,7 +15,7 @@ public class DriverFactory {
         };
     }
 
-    public BrowserTypes getBrowserFromCfg() {
+    private BrowserTypes getBrowserFromCfg() {
         String browser = System.getProperty("browserInUse").toUpperCase();
         try {
             return BrowserTypes.valueOf(browser);
