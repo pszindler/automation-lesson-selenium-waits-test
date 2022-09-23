@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22a64a02-7fa6-4d9f-9e3c-f8573dff23ec" name="Changes" comment="fixed problem with custom exception">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Driver/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
-    </list>
+    <list default="true" id="22a64a02-7fa6-4d9f-9e3c-f8573dff23ec" name="Changes" comment="fixed problem with custom exception" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -205,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663923854269</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fixed problem with custom exception">
+      <created>1663924104782</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1663924104782</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
