@@ -23,6 +23,9 @@ public class Product {
     public String getArticleName() {
         return articleName.getText();
     }
+    public String getArticlePrice() {
+        return currentPrice.getText();
+    }
 
     @Override
     public String toString() {

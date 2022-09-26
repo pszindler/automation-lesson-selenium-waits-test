@@ -2,10 +2,10 @@ package Pages.HomePage;
 
 import Pages.BasePage.BasePage;
 import lombok.Getter;
-import lombok.Setter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,7 @@ public class ProductsGridPage extends BasePage {
     }
 
     @FindBy(css = ".product")
-    private List<WebElement> productList;
+    public List<WebElement> productList;
     @Getter
     public List<Product> products;
 
@@ -32,5 +32,9 @@ public class ProductsGridPage extends BasePage {
 
     public Product getRandomProd() {
         return pickRandomWebElement(products);
+    }
+
+    public void visibleProducts() {
+        wait.until(ExpectedConditions.visibilityOfAllElements(productList));
     }
 }

@@ -2,7 +2,8 @@ package SearchTests;
 
 import TestBase.Pages;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.WebElement;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import java.util.List;
 
@@ -21,24 +22,21 @@ public class SearchPageTest extends Pages {
                 .getRandomProd()
                 .getArticleName();
 
-        topHomePageMenuPage.enterItemToSearch(pickedItem)
+        topMenu.enterItemToSearch(pickedItem)
                 .searchForItem();
 
         assertThat(searchResultPage.getTheFirstItemName()).isEqualTo(pickedItem);
 
     }
 
-//    @ParameterizedTest
-//    @ValueSource(strings = {"HUMMINGBIRD", "MUG"})
-    @Test
-    void checkIfDropDownAppearsWithAutoSuggestion() {
+    @ParameterizedTest
+    @ValueSource(strings = {"HUMMINGBIRD", "MUG", "POSTER", "CUSHION"})
+    void checkIfDropDownAppearsWithAutoSuggestion(String values) {
         driver.get("http://146.59.32.4/index.php");
 
-        topHomePageMenuPage.enterItemToSearch("HUMMINGBIRD");
-        List<WebElement> el = topHomePageMenuPage.getAutocompleteSuggestions();
-        System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" + el);
+        topMenu.enterItemToSearch(values);
+        List<String> el = topMenu.getAutocompleteSuggestionText();
 
-
-
+        assertThat(el).anyMatch(i -> i.contains(values));
     }
 }
