@@ -22,11 +22,12 @@ public class PurchaseTest extends Pages {
 
         topMenuPage.goToCart();
 
-        List<WebElement> cartItems = shoppingCartPage.getItemsList();
-        while(cartItems.size() > 3) {
+
+        for (int i = 0; i < mainPageProductNumber - 1; i++) {
             shoppingCartPage.deleteItem();
-            cartItems = shoppingCartPage.getItemsList();
+            List<WebElement> cartItems = shoppingCartPage.getItemsList();
         }
+
 
         shoppingCartPage.proceedToCheckOut();
         personalInfoPage.fillPersonalInfoForm()
