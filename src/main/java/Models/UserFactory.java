@@ -15,11 +15,11 @@ public class UserFactory {
                 .withBirthday(String.valueOf(faker.date().birthday(18, 85))).build();
     }
 
-    public static User generateMateuszUser() {
+    public static User generateUser() {
         return new User.UserBuilder()
-                .withFirstName("Mateusz")
-                .withLastName("Tadla")
-                .withEmail("mtadla@sii.pl")
+                .withFirstName("John")
+                .withLastName("Doe")
+                .withEmail("doej@email.com")
                 .withPassword("lubiePlacki88")
                 .withBirthday("12/23/1990").build();
     }
