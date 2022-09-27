@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22a64a02-7fa6-4d9f-9e3c-f8573dff23ec" name="Changes" comment="Test update">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/Homepage/TopMenuPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Homepage/ItemPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Homepage/ItemPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/ModalDialog/DialogPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/ModalDialog/DialogPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Purchase/PurchaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Purchase/PurchaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestBase/Pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase/Pages.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +102,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PurchaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automation-lesson-selenium-waits-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Purchase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Purchase" />
+      <option name="MAIN_CLASS_NAME" value="Purchase.PurchaseTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PurchaseTest.shouldMakePurchase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automation-lesson-selenium-waits-test" />
       <extension name="coverage">
@@ -131,23 +149,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchPageTest.searchForItemFromHomePageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="automation-lesson-yaml-properties" />
-      <option name="PACKAGE_NAME" value="SearchTests" />
-      <option name="MAIN_CLASS_NAME" value="SearchTests.SearchPageTest" />
-      <option name="METHOD_NAME" value="searchForItemFromHomePageTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PurchaseTest.shouldMakePurchase" />
+        <item itemvalue="JUnit.PurchaseTest" />
         <item itemvalue="JUnit.CategoriesAndFiltersTest.iterateThroughCategoriesTest" />
         <item itemvalue="JUnit.CategoriesAndFiltersTest.filterTest" />
         <item itemvalue="JUnit.SearchPageTest.checkIfDropDownAppearsWithAutoSuggestion (1)" />
-        <item itemvalue="JUnit.SearchPageTest.searchForItemFromHomePageTest" />
       </list>
     </recent_temporary>
   </component>

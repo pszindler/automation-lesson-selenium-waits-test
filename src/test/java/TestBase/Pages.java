@@ -1,6 +1,7 @@
 package TestBase;
 
 import Pages.Homepage.GridProductsPage;
+import Pages.Homepage.TopMenuPage;
 import Pages.ModalDialog.DialogPage;
 import Pages.Product.ProductPage;
 import Pages.ShoppingCart.ShoppingCartPage;
@@ -17,6 +18,7 @@ public class Pages extends TestBase {
     public static ShippingPage shippingPage;
     public static ProductPage productPage;
     public static GridProductsPage gridProductsPage;
+    public TopMenuPage topMenuPage;
 
     @BeforeEach
     public void createInstances() {
@@ -29,6 +31,7 @@ public class Pages extends TestBase {
         shippingPage = new ShippingPage(driver);
         productPage = new ProductPage(driver);
         gridProductsPage = new GridProductsPage(driver);
+        topMenuPage = new TopMenuPage(driver);
 
     }
 }

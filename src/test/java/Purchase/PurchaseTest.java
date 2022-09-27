@@ -9,9 +9,15 @@ public class PurchaseTest extends Pages {
 
     @Test
     void shouldMakePurchase() {
-        gridProductsPage.clickProduct(1);
-        productPage.addProductToCart();
-        dialogPage.proceedToShoppingCart();
+        int mainPageProductNumber = gridProductsPage.getProducts().size();
+        for (int i = 0; i < mainPageProductNumber; i++){
+            gridProductsPage.clickProduct(i);
+            productPage.addProductToCart();
+            dialogPage.continueShopping();
+            topMenuPage.goToHomepage();
+        }
+
+        topMenuPage.goToCart();
         shoppingCartPage.proceedToCheckOut();
         personalInfoPage.fillPersonalInfoForm()
                 .acceptForm();

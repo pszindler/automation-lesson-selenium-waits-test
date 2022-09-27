@@ -13,10 +13,18 @@ public class DialogPage extends BasePage {
 
     @FindBy(css = ".cart-content-btn .btn-primary")
     private WebElement proceedToShoppingCartBtn;
+    @FindBy(css = ".cart-content-btn .btn-secondary")
+    private WebElement continueShoppingBtn;
 
     public DialogPage proceedToShoppingCart() {
         waitForElement(proceedToShoppingCartBtn);
         proceedToShoppingCartBtn.click();
+        return this;
+    }
+
+    public DialogPage continueShopping() {
+        waitForElement(continueShoppingBtn);
+        continueShoppingBtn.click();
         return this;
     }
 
