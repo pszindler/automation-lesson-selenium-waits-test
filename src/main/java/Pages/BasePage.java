@@ -73,7 +73,6 @@ public abstract class BasePage {
     }
 
     public void hoverOnElement(WebElement element) {
-        Actions actions = new Actions(driver);
         actions.moveToElement(element).perform();
     }
 

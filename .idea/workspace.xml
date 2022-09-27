@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22a64a02-7fa6-4d9f-9e3c-f8573dff23ec" name="Changes" comment="fixed problem with custom exception">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+    <list default="true" id="22a64a02-7fa6-4d9f-9e3c-f8573dff23ec" name="Changes" comment="base code">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/ModalDialog/DialogPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/ShoppingCart/ShoppingCartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/BasePage/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Category/ArtPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Category/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage/ProductsGridPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage/TopMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SearchPage/SearchResultPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProductAndCategoriesTests/CategoriesAndFiltersTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SearchTests/SearchPageTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestBase/Pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase/Pages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663934818050</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="base code">
+      <created>1664262672001</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1664262672001</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -317,7 +316,8 @@
     <MESSAGE value="new type of switch" />
     <MESSAGE value="fixes after Darek tips" />
     <MESSAGE value="fixed problem with custom exception" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed problem with custom exception" />
+    <MESSAGE value="base code" />
+    <option name="LAST_COMMIT_MESSAGE" value="base code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
