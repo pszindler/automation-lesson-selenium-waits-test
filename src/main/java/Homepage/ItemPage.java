@@ -12,6 +12,8 @@ public class ItemPage {
 
     @FindBy(css = ".price")
     private WebElement price;
+    @FindBy(css = ".product-miniature")
+    private WebElement product;
 
     public ItemPage(WebElement element) {
         PageFactory.initElements(new DefaultElementLocatorFactory(element), this);
@@ -23,5 +25,9 @@ public class ItemPage {
 
     public float getProductPrice() {
         return Float.parseFloat(price.getText().replace("$", ""));
+    }
+
+    public WebElement getProduct() {
+        return product;
     }
 }

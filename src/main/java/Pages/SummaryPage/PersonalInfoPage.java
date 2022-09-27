@@ -22,9 +22,21 @@ public class PersonalInfoPage extends BasePage {
     @FindBy(css = "input[name=psgdpr]")
     private WebElement generalConditionsOfUse;
 
-    public void fillPersonalInfoForm() {
-        User user = UserFactory.generateRandomUser();
+    @FindBy(css = "button[data-link-action=register-new-customer]")
+    private WebElement continueBtn;
+
+    public PersonalInfoPage fillPersonalInfoForm() {
+        User user = UserFactory.generateUser();
         firstName.sendKeys(user.getFirstName());
         lastName.sendKeys(user.getLastName());
+        email.sendKeys(user.getEmail());
+        customerPrivacy.click();
+        generalConditionsOfUse.click();
+        return this;
+    }
+
+    public PersonalInfoPage acceptForm() {
+        continueBtn.click();
+        return this;
     }
 }

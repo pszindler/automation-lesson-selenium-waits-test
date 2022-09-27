@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22a64a02-7fa6-4d9f-9e3c-f8573dff23ec" name="Changes" comment="PaymentPage.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/SummaryPage/ConfirmationPage.java" afterDir="false" />
+    <list default="true" id="22a64a02-7fa6-4d9f-9e3c-f8573dff23ec" name="Changes" comment="ProductPage, GridProdPage, ItemPage, PersonalInfoPage">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/SummaryPage/ShippingPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Purchase/PurchaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homepage/GridProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homepage/GridProductsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Homepage/ItemPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homepage/ItemPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/UserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/UserFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SummaryPage/PersonalInfoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/SummaryPage/PersonalInfoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestBase/Pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase/Pages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestBase/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +73,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CategoriesAndFiltersTest.iterateThroughCategoriesTest">
+  <component name="RunManager" selected="JUnit.PurchaseTest.shouldMakePurchase">
     <configuration name="CategoriesAndFiltersTest.filterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automation-lesson-yaml-properties" />
       <extension name="coverage">
@@ -98,6 +106,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PurchaseTest.shouldMakePurchase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automation-lesson-selenium-waits-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Purchase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Purchase" />
+      <option name="MAIN_CLASS_NAME" value="Purchase.PurchaseTest" />
+      <option name="METHOD_NAME" value="shouldMakePurchase" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SearchPageTest.checkIfDropDownAppearsWithAutoSuggestion (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automation-lesson-yaml-properties" />
       <extension name="coverage">
@@ -109,22 +133,6 @@
       <option name="PACKAGE_NAME" value="SearchTests" />
       <option name="MAIN_CLASS_NAME" value="SearchTests.SearchPageTest" />
       <option name="METHOD_NAME" value="checkIfDropDownAppearsWithAutoSuggestion" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchPageTest.checkIfDropDownAppearsWithAutoSuggestion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="automation-lesson-yaml-properties" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SearchTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SearchTests" />
-      <option name="MAIN_CLASS_NAME" value="SearchTests.SearchPageTest" />
-      <option name="METHOD_NAME" value="checkIfDropDownAppearsWithAutoSuggestion(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PurchaseTest.shouldMakePurchase" />
         <item itemvalue="JUnit.CategoriesAndFiltersTest.iterateThroughCategoriesTest" />
         <item itemvalue="JUnit.CategoriesAndFiltersTest.filterTest" />
         <item itemvalue="JUnit.SearchPageTest.checkIfDropDownAppearsWithAutoSuggestion (1)" />
         <item itemvalue="JUnit.SearchPageTest.searchForItemFromHomePageTest" />
-        <item itemvalue="JUnit.SearchPageTest.checkIfDropDownAppearsWithAutoSuggestion" />
       </list>
     </recent_temporary>
   </component>

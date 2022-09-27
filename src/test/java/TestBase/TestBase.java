@@ -20,6 +20,7 @@ public class TestBase {
     @BeforeEach
     void setup() {
         driver = new DriverFactory().createInstance();
+        driver.get("http://146.59.32.4/index.php");
     }
 
     @AfterEach
