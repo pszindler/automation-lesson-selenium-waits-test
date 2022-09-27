@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22a64a02-7fa6-4d9f-9e3c-f8573dff23ec" name="Changes" comment="base code">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/ModalDialog/DialogPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/ShoppingCart/ShoppingCartPage.java" afterDir="false" />
+    <list default="true" id="22a64a02-7fa6-4d9f-9e3c-f8573dff23ec" name="Changes" comment="Dialog and ShoppingCartPage">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/SummaryPage/AddressesPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664262672001</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Dialog and ShoppingCartPage">
+      <created>1664267058312</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1664267058312</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -317,7 +322,8 @@
     <MESSAGE value="fixes after Darek tips" />
     <MESSAGE value="fixed problem with custom exception" />
     <MESSAGE value="base code" />
-    <option name="LAST_COMMIT_MESSAGE" value="base code" />
+    <MESSAGE value="Dialog and ShoppingCartPage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dialog and ShoppingCartPage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
