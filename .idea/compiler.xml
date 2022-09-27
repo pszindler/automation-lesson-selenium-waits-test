@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="automation-lesson-yaml-properties" />
+        <module name="automation-lesson-selenium-waits-test" />
       </profile>
     </annotationProcessing>
   </component>
