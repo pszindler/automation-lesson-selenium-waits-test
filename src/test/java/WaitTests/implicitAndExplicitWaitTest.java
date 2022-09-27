@@ -1,5 +1,6 @@
 package WaitTests;
 
+import Pages.BasePage;
 import TestBase.TestBase;
 import org.junit.jupiter.api.Test;
 

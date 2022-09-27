@@ -1,4 +1,4 @@
-package Homepage;
+package Pages.Homepage;
 
 import Pages.BasePage;
 import org.openqa.selenium.WebDriver;

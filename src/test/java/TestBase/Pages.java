@@ -1,6 +1,6 @@
 package TestBase;
 
-import Homepage.GridProductsPage;
+import Pages.Homepage.GridProductsPage;
 import Pages.ModalDialog.DialogPage;
 import Pages.Product.ProductPage;
 import Pages.ShoppingCart.ShoppingCartPage;
@@ -16,7 +16,6 @@ public class Pages extends TestBase {
     public static PersonalInfoPage personalInfoPage;
     public static ShippingPage shippingPage;
     public static ProductPage productPage;
-
     public static GridProductsPage gridProductsPage;
 
     @BeforeEach
