@@ -26,6 +26,7 @@ public class PersonalInfoPage extends BasePage {
     private WebElement continueBtn;
 
     public PersonalInfoPage fillPersonalInfoForm() {
+        waitForElement(continueBtn);
         User user = UserFactory.generateUser();
         firstName.sendKeys(user.getFirstName());
         lastName.sendKeys(user.getLastName());

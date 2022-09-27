@@ -90,4 +90,16 @@ public abstract class BasePage {
     public void waitForElement(WebElement element) {
         wait.until(ExpectedConditions.visibilityOf(element));
     }
+
+    public void waitForElement(List<WebElement> elements) {
+        wait.until(ExpectedConditions.visibilityOfAllElements(elements));
+    }
+
+    public void isItemNotVisible(List<WebElement> elements) {
+        wait.until(ExpectedConditions.invisibilityOf(elements.get(0)));
+    }
+
+    public boolean isElementChanged(WebElement element) {
+        return wait.until(ExpectedConditions.stalenessOf(element));
+    }
 }
