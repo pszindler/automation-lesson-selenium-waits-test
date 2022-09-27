@@ -14,7 +14,6 @@ public class ConfirmationPage extends BasePage {
     private WebElement titleConfirmed;
 
     public String getConfirmationStatus() {
-        waitForElement(titleConfirmed);
         return titleConfirmed.getText();
     }
 }

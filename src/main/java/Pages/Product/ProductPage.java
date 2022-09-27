@@ -15,7 +15,6 @@ public class ProductPage extends BasePage {
     private WebElement addToCartBtn;
 
     public ProductPage addProductToCart() {
-        waitForElement(addToCartBtn);
         addToCartBtn.click();
         return this;
     }

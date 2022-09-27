@@ -5,7 +5,7 @@ browser:
     headlessMode: true
     fullscreenMode: true
     takeScreenshot: true
-    webElementTimeout: 15
+    webElementTimeout: 1
     webElementPooling: 10
 
 environment:
