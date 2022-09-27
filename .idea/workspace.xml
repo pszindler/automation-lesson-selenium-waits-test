@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22a64a02-7fa6-4d9f-9e3c-f8573dff23ec" name="Changes" comment="PaymentPage.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/SummaryPage/ConfirmationPage.java" afterDir="false" />
+    <list default="true" id="22a64a02-7fa6-4d9f-9e3c-f8573dff23ec" name="Changes" comment="static pages added">
+      <change afterPath="$PROJECT_DIR$/src/test/java/WaitTests/implicitAndExplicitWaitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestBase/Pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase/Pages.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +49,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Development/SzkolenieTesterskie/SeleniumModernTester/automation-lesson-selenium-waits-test&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pszindler/Downloads/cwm-plugin-221.5921.22.3.zip&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -313,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664269583813</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="static pages added">
+      <created>1664270047467</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1664270047467</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -338,7 +348,8 @@
     <MESSAGE value="Dialog and ShoppingCartPage" />
     <MESSAGE value="AddressesPage.java" />
     <MESSAGE value="PaymentPage.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="PaymentPage.java" />
+    <MESSAGE value="static pages added" />
+    <option name="LAST_COMMIT_MESSAGE" value="static pages added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

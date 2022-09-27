@@ -5,6 +5,7 @@ import Pages.ShoppingCart.ShoppingCartPage;
 import Pages.SummaryPage.AddressesPage;
 import Pages.SummaryPage.ConfirmationPage;
 import Pages.SummaryPage.PaymentPage;
+import Pages.SummaryPage.PersonalInfoPage;
 import org.junit.jupiter.api.BeforeEach;
 
 public class Pages extends TestBase {
@@ -13,6 +14,7 @@ public class Pages extends TestBase {
     public static AddressesPage addressesPage;
     public static ConfirmationPage confirmationPage;
     public static PaymentPage paymentPage;
+    public static PersonalInfoPage personalInfoPage;
 
     @BeforeEach
     public void createInstances() {
