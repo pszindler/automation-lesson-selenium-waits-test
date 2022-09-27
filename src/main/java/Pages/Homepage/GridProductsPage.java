@@ -21,7 +21,7 @@ public class GridProductsPage extends BasePage {
     }
 
     public List<ItemPage> getProducts() {
-        return products.stream().map(ItemPage::new).collect(Collectors.toList());
+        return products.stream().map(p -> new ItemPage(driver, p)).collect(Collectors.toList());
     }
 
     public void clickProduct(int index) {

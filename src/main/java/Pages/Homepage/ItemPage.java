@@ -1,11 +1,13 @@
 package Pages.Homepage;
 
+import Pages.BasePage;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory;
 
-public class ItemPage {
+public class ItemPage extends BasePage {
 
     @FindBy(css = ".product-title")
     private WebElement productTitle;
@@ -15,8 +17,8 @@ public class ItemPage {
     @FindBy(css = ".product-miniature")
     private WebElement product;
 
-    public ItemPage(WebElement element) {
-        PageFactory.initElements(new DefaultElementLocatorFactory(element), this);
+    public ItemPage(WebDriver driver, WebElement element) {
+        super(driver, element);
     }
 
     public String getProductTitle() {
