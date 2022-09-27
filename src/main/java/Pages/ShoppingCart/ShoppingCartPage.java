@@ -14,6 +14,7 @@ public class ShoppingCartPage extends BasePage {
     private WebElement proceedToCheckoutBtn;
 
     public ShoppingCartPage proceedToCheckOut() {
+        waitForElement(proceedToCheckoutBtn);
         proceedToCheckoutBtn.click();
         return this;
     }

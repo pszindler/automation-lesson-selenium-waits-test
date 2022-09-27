@@ -15,6 +15,7 @@ public class ShippingPage extends BasePage {
     }
 
     public void ConfirmDeliveryOption() {
+        waitForElement(continueBtn);
         continueBtn.click();
     }
 }

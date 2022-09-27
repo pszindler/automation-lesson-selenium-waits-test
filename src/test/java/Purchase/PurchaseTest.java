@@ -15,7 +15,7 @@ public class PurchaseTest extends Pages {
         shoppingCartPage.proceedToCheckOut();
         personalInfoPage.fillPersonalInfoForm()
                 .acceptForm();
-        addressesPage.fillAddressesForm("sdfds", "sdfsd", "12345", "2")
+        addressesPage.fillAddressesForm("Duck", "Orlando", "42132", "Alaska")
                 .acceptFrom();
         shippingPage.ConfirmDeliveryOption();
         paymentPage.proceedPayment();

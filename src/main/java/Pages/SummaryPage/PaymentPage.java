@@ -18,6 +18,7 @@ public class PaymentPage extends BasePage {
     private WebElement placeOrder;
 
     public void proceedPayment() {
+        waitForElement(placeOrder);
         paymentOptionByCheck.click();
         agreeToTheTerms.click();
         placeOrder.click();

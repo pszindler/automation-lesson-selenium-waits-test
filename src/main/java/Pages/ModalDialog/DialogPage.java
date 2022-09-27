@@ -15,8 +15,11 @@ public class DialogPage extends BasePage {
     private WebElement proceedToShoppingCartBtn;
 
     public DialogPage proceedToShoppingCart() {
+        waitForElement(proceedToShoppingCartBtn);
         proceedToShoppingCartBtn.click();
         return this;
     }
+
+
 
 }

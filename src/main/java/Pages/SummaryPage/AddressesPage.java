@@ -23,10 +23,11 @@ public class AddressesPage extends BasePage {
     private WebElement confirmAddressesBtn;
 
     public AddressesPage fillAddressesForm(String adr, String cityName, String zipCode, String USState) {
+        waitForElement(confirmAddressesBtn);
         address.sendKeys(adr);
         city.sendKeys(cityName);
         postalCode.sendKeys(zipCode);
-        new Select(state).selectByValue(USState);
+        new Select(state).selectByVisibleText(USState);
         return this;
     }
 

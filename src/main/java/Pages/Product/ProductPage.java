@@ -14,8 +14,11 @@ public class ProductPage extends BasePage {
     @FindBy(css = ".add-to-cart")
     private WebElement addToCartBtn;
 
-    public void addProductToCart() {
+    public ProductPage addProductToCart() {
+        waitForElement(addToCartBtn);
         addToCartBtn.click();
+        return this;
     }
+
 
 }
