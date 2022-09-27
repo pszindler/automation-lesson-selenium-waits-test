@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22a64a02-7fa6-4d9f-9e3c-f8573dff23ec" name="Changes" comment="Test update">
+    <list default="true" id="22a64a02-7fa6-4d9f-9e3c-f8573dff23ec" name="Changes" comment="explicitwait added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Homepage/ItemPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Homepage/ItemPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Product/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Product/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/ShoppingCart/ShoppingCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/ShoppingCart/ShoppingCartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SummaryPage/AddressesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/SummaryPage/AddressesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SummaryPage/ConfirmationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/SummaryPage/ConfirmationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SummaryPage/PaymentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/SummaryPage/PaymentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SummaryPage/PersonalInfoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/SummaryPage/PersonalInfoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SummaryPage/ShippingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/SummaryPage/ShippingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +73,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PurchaseTest.shouldMakePurchase">
+  <component name="RunManager" selected="JUnit.PurchaseTest.shouldMakePurchase (1)">
     <configuration name="CategoriesAndFiltersTest.filterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="automation-lesson-yaml-properties" />
       <extension name="coverage">
@@ -94,6 +101,22 @@
       <option name="PACKAGE_NAME" value="ProductAndCategoriesTests" />
       <option name="MAIN_CLASS_NAME" value="ProductAndCategoriesTests.CategoriesAndFiltersTest" />
       <option name="METHOD_NAME" value="iterateThroughCategoriesTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PurchaseTest.shouldMakePurchase (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project-with-darek" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Purchase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Purchase" />
+      <option name="MAIN_CLASS_NAME" value="Purchase.PurchaseTest" />
+      <option name="METHOD_NAME" value="shouldMakePurchase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,23 +154,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchPageTest.searchForItemFromHomePageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="automation-lesson-yaml-properties" />
-      <option name="PACKAGE_NAME" value="SearchTests" />
-      <option name="MAIN_CLASS_NAME" value="SearchTests.SearchPageTest" />
-      <option name="METHOD_NAME" value="searchForItemFromHomePageTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PurchaseTest.shouldMakePurchase (1)" />
         <item itemvalue="JUnit.PurchaseTest.shouldMakePurchase" />
         <item itemvalue="JUnit.CategoriesAndFiltersTest.iterateThroughCategoriesTest" />
         <item itemvalue="JUnit.CategoriesAndFiltersTest.filterTest" />
         <item itemvalue="JUnit.SearchPageTest.checkIfDropDownAppearsWithAutoSuggestion (1)" />
-        <item itemvalue="JUnit.SearchPageTest.searchForItemFromHomePageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -335,7 +348,28 @@
       <option name="project" value="LOCAL" />
       <updated>1664274226556</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="refactor">
+      <created>1664274816930</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1664274816930</updated>
+    </task>
+    <task id="LOCAL-00027" summary="refactor">
+      <created>1664274951173</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1664274951173</updated>
+    </task>
+    <task id="LOCAL-00028" summary="explicitwait added">
+      <created>1664276453617</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1664276453617</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -362,7 +396,9 @@
     <MESSAGE value="PaymentPage.java" />
     <MESSAGE value="Test" />
     <MESSAGE value="Test update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test update" />
+    <MESSAGE value="refactor" />
+    <MESSAGE value="explicitwait added" />
+    <option name="LAST_COMMIT_MESSAGE" value="explicitwait added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
