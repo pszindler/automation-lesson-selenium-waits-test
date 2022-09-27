@@ -15,7 +15,7 @@ public class AddressesPage extends BasePage {
     private WebElement address;
     @FindBy(css = "input[name='city']")
     private WebElement city;
-    @FindBy(css = "input[name='address1']")
+    @FindBy(css = "input[name='postcode']")
     private WebElement postalCode;
     @FindBy(css = "select[name='id_state']")
     private WebElement state;

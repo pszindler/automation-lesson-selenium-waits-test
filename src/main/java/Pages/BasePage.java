@@ -25,6 +25,7 @@ public abstract class BasePage {
     public BasePage(WebDriver driver) {
         initDrivers(driver);
         PageFactory.initElements(driver, this);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
     }
 
     public BasePage(WebDriver driver, WebElement element) {
