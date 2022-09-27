@@ -20,7 +20,7 @@ public class PurchaseTest extends Pages {
         shippingPage.ConfirmDeliveryOption();
         paymentPage.proceedPayment();
 
-        assertThat(confirmationPage.getConfirmationStatus()).isEqualTo("YOUR ORDER IS CONFIRMED");
+        assertThat(confirmationPage.getConfirmationStatus()).contains("YOUR ORDER IS CONFIRMED");
 
     }
 }
