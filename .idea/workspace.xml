@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22a64a02-7fa6-4d9f-9e3c-f8573dff23ec" name="Changes" comment="fixed problem with custom exception">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/Category/ArtPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/Category/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage/TopMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ProductAndCategoriesTests/CategoriesAndFiltersTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/BasePage/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/BasePage/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage/ProductsGridPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage/ProductsGridPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage/TopHomePageMenuPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SearchTests/SearchPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SearchTests/SearchPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/BasePage/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Category/ArtPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Category/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage/ProductsGridPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage/TopMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SearchPage/SearchResultPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductAndCategoriesTests/CategoriesAndFiltersTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SearchTests/SearchPageTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestBase/Pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase/Pages.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +37,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2EyxcbTVgSgrbZcu9ZgbidNXIuH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -49,6 +57,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Development/SzkolenieTesterskie/SeleniumModernTester/automation-lesson-selenium-waits-test&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
