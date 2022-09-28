@@ -18,6 +18,7 @@ public class TopMenuPage extends BasePage {
     }
 
     public void goToHomepage() {
+        waitForElementToBeClickable(topLogo);
         topLogo.click();
     }
 

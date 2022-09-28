@@ -23,7 +23,7 @@ public class DialogPage extends BasePage {
     }
 
     public DialogPage continueShopping() {
-        waitForElement(continueShoppingBtn);
+        waitForElementToBeClickable(continueShoppingBtn);
         continueShoppingBtn.click();
         return this;
     }

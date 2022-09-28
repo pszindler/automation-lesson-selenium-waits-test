@@ -17,7 +17,7 @@ public class PurchaseTest extends Pages {
             gridProductsPage.goToQuickView(i);
             quickViewPage.addProductToCart();
             dialogPage.continueShopping();
- //           topMenuPage.goToHomepage();
+            topMenuPage.goToHomepage();
         }
 
         topMenuPage.goToCart();
