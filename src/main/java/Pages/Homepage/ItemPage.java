@@ -17,6 +17,12 @@ public class ItemPage extends BasePage {
     @FindBy(css = ".product-miniature")
     private WebElement product;
 
+    @FindBy(css = ".product-description")
+    private WebElement prodDescription;
+
+    @FindBy(css = ".quick-view")
+    private WebElement quickView;
+
     public ItemPage(WebDriver driver, WebElement element) {
         super(driver, element);
     }
@@ -31,5 +37,12 @@ public class ItemPage extends BasePage {
 
     public WebElement getProduct() {
         return product;
+    }
+
+    public void goToQuickView() {
+        actions.moveToElement(prodDescription).perform();
+        actions.moveToElement(quickView).perform();
+        waitForElementToBeClickable(quickView);
+        quickView.click();
     }
 }

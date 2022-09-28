@@ -14,19 +14,18 @@ public class PurchaseTest extends Pages {
     void shouldMakePurchase() {
         int mainPageProductNumber = gridProductsPage.getProducts().size();
         for (int i = 0; i < mainPageProductNumber; i++) {
-            gridProductsPage.clickProduct(i);
-            productPage.addProductToCart();
+            gridProductsPage.goToQuickView(i);
+            quickViewPage.addProductToCart();
             dialogPage.continueShopping();
-            topMenuPage.goToHomepage();
+ //           topMenuPage.goToHomepage();
         }
 
         topMenuPage.goToCart();
 
-
-        for (int i = 0; i < mainPageProductNumber - 1; i++) {
+       /* for (int i = 0; i < mainPageProductNumber - 1; i++) {
             shoppingCartPage.deleteItem();
             List<WebElement> cartItems = shoppingCartPage.getItemsList();
-        }
+        }*/
 
 
         shoppingCartPage.proceedToCheckOut();

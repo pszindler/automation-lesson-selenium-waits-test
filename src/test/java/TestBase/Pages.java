@@ -4,6 +4,7 @@ import Pages.Homepage.GridProductsPage;
 import Pages.Homepage.TopMenuPage;
 import Pages.ModalDialog.DialogPage;
 import Pages.Product.ProductPage;
+import Pages.ModalDialog.QuickViewPage;
 import Pages.ShoppingCart.ShoppingCartPage;
 import Pages.SummaryPage.*;
 import org.junit.jupiter.api.BeforeEach;
@@ -18,7 +19,8 @@ public class Pages extends TestBase {
     public static ShippingPage shippingPage;
     public static ProductPage productPage;
     public static GridProductsPage gridProductsPage;
-    public TopMenuPage topMenuPage;
+    public static TopMenuPage topMenuPage;
+    public static QuickViewPage quickViewPage;
 
     @BeforeEach
     public void createInstances() {
@@ -32,6 +34,7 @@ public class Pages extends TestBase {
         productPage = new ProductPage(driver);
         gridProductsPage = new GridProductsPage(driver);
         topMenuPage = new TopMenuPage(driver);
+        quickViewPage = new QuickViewPage(driver);
 
     }
 }

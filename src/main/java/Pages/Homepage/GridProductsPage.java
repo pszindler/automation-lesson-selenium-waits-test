@@ -27,4 +27,6 @@ public class GridProductsPage extends BasePage {
     public void clickProduct(int index) {
         getProducts().get(index).getProduct().click();
     }
+
+    public void goToQuickView(int index) {getProducts().get(index).goToQuickView();}
 }

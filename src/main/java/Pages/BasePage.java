@@ -102,4 +102,8 @@ public abstract class BasePage {
     public boolean isElementChanged(WebElement element) {
         return wait.until(ExpectedConditions.stalenessOf(element));
     }
+
+    public void waitForElementToBeClickable(WebElement element) {
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
 }
